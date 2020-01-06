@@ -23,7 +23,7 @@ import {
 import firebase from 'react-native-firebase'
 
 
-class Login extends React.Component{
+class List extends React.Component{
  constructor(props){
    super(props);
    this.state={
@@ -32,12 +32,17 @@ class Login extends React.Component{
      password:'',
     }
  }
-
+componentDidMount(){
+      var abc=firebase.database().ref()
+      abc.on('child_added',(snapshot)=>{
+        console.log(snapshot)
+      })
+}
 
   getData =  () => {
   AsyncStorage.getItem('uid').then((val)=>console.log(val))
   }
-  onLogin=()=>{
+  onList=()=>{
     firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((data)=>{
         AsyncStorage.setItem('uid',data.user.uid)
    
@@ -107,4 +112,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
+export default List;

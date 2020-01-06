@@ -13,16 +13,16 @@ import java.util.ArrayList;
 import com.fypmblapp.BuildConfig;
 import com.fypmblapp.R;
 
-// @react-native-community/async-storage
-import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// @react-native-community/geolocation
+import com.reactnativecommunity.geolocation.GeolocationPackage;
 // react-native-firebase
 import io.invertase.firebase.RNFirebasePackage;
 // react-native-image-picker
 import com.imagepicker.ImagePickerPackage;
+// react-native-maps
+import com.airbnb.android.react.maps.MapsPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
-// react-native-webview
-import com.reactnativecommunity.webview.RNCWebViewPackage;
 
 public class PackageList {
   private Application application;
@@ -56,11 +56,11 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
-      new AsyncStoragePackage(),
+      new GeolocationPackage(),
       new RNFirebasePackage(),
       new ImagePickerPackage(),
-      new VectorIconsPackage(),
-      new RNCWebViewPackage()
+      new MapsPackage(),
+      new VectorIconsPackage()
     ));
   }
 }

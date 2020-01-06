@@ -29,6 +29,7 @@ class Register extends React.Component{
    super(props);
    this.state={
     firebaseUID:'',
+    name:'',
      email:'',
      password:'',
      profilePicUrl:'',
@@ -85,8 +86,10 @@ onRegister=()=>{
      cnic:this.state.cnic,
      createdDate:Date.now(),
      userType:this.state.userType,
+     name:this.state.name
    })
    this.setState({
+     name:'',
     email:'',
     password:'',
     cnic:'',
@@ -173,9 +176,9 @@ ChooseImage = ()=>{
      var buttons=['Customer', 'Land Lord']
     return (
       <View style={styles.Container}>
-        <Text h2 style={{color:'#F246AD',marginBottom:25}}>Stay N GO</Text>
+        <Text h3 style={{color:'#F246AD',marginBottom:25}}>Stay N GO</Text>
 
-        <Text h3 style={{color:'gray',alignSelf:'flex-start',marginBottom:15,marginLeft:"7%"}}>SignUp As</Text>
+        <Text h4 style={{color:'gray',alignSelf:'flex-start',marginBottom:15,marginLeft:"7%"}}>SignUp As</Text>
         <ButtonGroup
         selectedButtonStyle={{backgroundColor:'#F246AD'}}
       onPress={this.updateIndex}
@@ -187,6 +190,7 @@ ChooseImage = ()=>{
       <View style={{width:'90%',borderRadius:10}}>
           
           
+          <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
 
       <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
       <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
@@ -194,21 +198,21 @@ ChooseImage = ()=>{
       <TextInput placeholder="CNIC/Passport No...." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.cnic}  onChangeText={(value)=>this.setState({cnic:value})} />
 
       <Button title="Choose Profile Picture" onPress={this.ChooseImage} buttonStyle={{backgroundColor:"#F246AD",width:'50%',alignSelf:'flex-start',marginTop:15}} />
- {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:80,height:80,marginTop:5,borderRadius:8}}/>
+      {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:60,height:60,marginTop:5,borderRadius:8}}/>
 }
       <Text style={{marginLeft:"3%"}}>Have Account <Text style={{color:'blue'}} onPress={()=>this.props.navigation.navigate('SignIn')}>Sign In</Text></Text>
       <Button title="Sign Up" onPress={this.onRegister}  buttonStyle={{backgroundColor:"#F246AD",width:100,alignSelf:'flex-end',marginTop:15}} />
 
     </View>:
      <View style={{width:'90%',borderRadius:10}}>
+          <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
 
 <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
       <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
       <Text h6>TextInput CNIC (if Pakistani) else Passport No.</Text>
       <TextInput placeholder="CNIC/Passport No...." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.cnic}  onChangeText={(value)=>this.setState({cnic:value})} />
-
       <Button title="Choose Profile Picture" onPress={this.ChooseImage} buttonStyle={{backgroundColor:"#F246AD",width:'50%',alignSelf:'flex-start',marginTop:15}} />
- {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:80,height:80,marginTop:5,borderRadius:8}}/>
+ {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:60,height:60,marginTop:5,borderRadius:8}}/>
 }
       <Text style={{marginLeft:"3%"}}>Have Account <Text style={{color:'blue'}} onPress={()=>this.props.navigation.navigate('SignIn')}>Sign In</Text></Text>
       <Button title="Sign Up" onPress={this.onRegister}  buttonStyle={{backgroundColor:"#F246AD",width:100,alignSelf:'flex-end',marginTop:15}} />

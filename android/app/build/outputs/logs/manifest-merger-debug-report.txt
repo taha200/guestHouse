@@ -5,17 +5,18 @@ INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\main\An
 INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-vector-icons] F:\React Native Practice\RNFirebase-master\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
-MERGED from [:@react-native-community_async-storage] F:\React Native Practice\RNFirebase-master\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_geolocation] F:\React Native Practice\RNFirebase-master\node_modules\@react-native-community\geolocation\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
-MERGED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [com.facebook.react:react-native:0.60.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f8babb929bd24993472e9fb5925a20be\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\66f291c7a0c1bad9aa4fba5021865970\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f6e9c5ec4348a3312ccb535c6eb445d8\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\96667182f2763bb0f9f7aa23161aab1e\AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\deca9fd40fcb2523fe768e7905a94f7e\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2b3807b454b8dd1b10f3ca42099d430c\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2e64459eefeba979ccf3b468d8044036\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:17:1-36:12
@@ -23,9 +24,10 @@ MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Taha\.gradle\cach
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\7c089868ef9f93e088ddc046a0fbbf23\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1f524bbdda07aa6115bea68716b6578d\AndroidManifest.xml:17:1-29:12
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\29812dd5eaaabb91a83d80abffa7ceea\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e3f8859426e8163cfbcf14db9cda7dd4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2854ea1460a85ae557cb5066c9c8b4e5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1ee8de2871fa4080db5a0b11b584e001\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e3f8859426e8163cfbcf14db9cda7dd4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\dd5dce19bfbff4835eb53067af7ddc47\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\74a7d71b64df22438b78f06252fc1fdd\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e91dfabd5816a4e04e9a6123f41b0be9\AndroidManifest.xml:2:1-9:12
@@ -95,12 +97,16 @@ INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\debug\A
 		ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-67
 MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\96667182f2763bb0f9f7aa23161aab1e\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\96667182f2763bb0f9f7aa23161aab1e\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:27:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\d022ef1a046a83a2839fca022ee7e7a7\AndroidManifest.xml:23:5-67
@@ -127,6 +133,8 @@ ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\Andro
 		ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:7:26-80
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:8:5-81
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-81
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-81
 	android:name
 		ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:8:22-78
 application
@@ -137,8 +145,6 @@ MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\
 MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-21:19
 MERGED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-19:19
-MERGED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.60.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f8babb929bd24993472e9fb5925a20be\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.60.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f8babb929bd24993472e9fb5925a20be\AndroidManifest.xml:11:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\66f291c7a0c1bad9aa4fba5021865970\AndroidManifest.xml:7:5-20
@@ -151,6 +157,8 @@ MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Taha\.gradle\cac
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\deca9fd40fcb2523fe768e7905a94f7e\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:29:5-35:19
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:29:5-35:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2b3807b454b8dd1b10f3ca42099d430c\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2b3807b454b8dd1b10f3ca42099d430c\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:26:5-34:19
@@ -161,6 +169,8 @@ MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Taha\.gra
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\7c089868ef9f93e088ddc046a0fbbf23\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1f524bbdda07aa6115bea68716b6578d\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1f524bbdda07aa6115bea68716b6578d\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:7:5-11:19
 MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\269fb88744e3c3e48ae21e0ac8e2c54e\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\269fb88744e3c3e48ae21e0ac8e2c54e\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0c7b40a10d06e59f2643365719918a13\AndroidManifest.xml:28:5-53:19
@@ -238,7 +248,7 @@ ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\Andro
 	android:name
 		ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:27:17-81
 meta-data#com.google.android.geo.API_KEY
-ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:28:8-30:63
+ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:28:4-30:63
 	android:value
 		ADDED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml:30:6-61
 	android:name
@@ -247,16 +257,16 @@ uses-sdk
 INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml
 INJECTED from F:\React Native Practice\RNFirebase-master\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] F:\React Native Practice\RNFirebase-master\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] F:\React Native Practice\RNFirebase-master\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] F:\React Native Practice\RNFirebase-master\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase] F:\React Native Practice\RNFirebase-master\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:@react-native-community_async-storage] F:\React Native Practice\RNFirebase-master\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:@react-native-community_async-storage] F:\React Native Practice\RNFirebase-master\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_geolocation] F:\React Native Practice\RNFirebase-master\node_modules\@react-native-community\geolocation\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_geolocation] F:\React Native Practice\RNFirebase-master\node_modules\@react-native-community\geolocation\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.60.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f8babb929bd24993472e9fb5925a20be\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.60.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f8babb929bd24993472e9fb5925a20be\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\66f291c7a0c1bad9aa4fba5021865970\AndroidManifest.xml:5:5-44
@@ -269,6 +279,8 @@ MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Taha\.gradle\cac
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\deca9fd40fcb2523fe768e7905a94f7e\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2b3807b454b8dd1b10f3ca42099d430c\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2b3807b454b8dd1b10f3ca42099d430c\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2e64459eefeba979ccf3b468d8044036\AndroidManifest.xml:20:5-44
@@ -283,12 +295,14 @@ MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gr
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1f524bbdda07aa6115bea68716b6578d\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\29812dd5eaaabb91a83d80abffa7ceea\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\29812dd5eaaabb91a83d80abffa7ceea\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e3f8859426e8163cfbcf14db9cda7dd4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e3f8859426e8163cfbcf14db9cda7dd4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:5:5-43
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2854ea1460a85ae557cb5066c9c8b4e5\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\2854ea1460a85ae557cb5066c9c8b4e5\AndroidManifest.xml:20:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1ee8de2871fa4080db5a0b11b584e001\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1ee8de2871fa4080db5a0b11b584e001\AndroidManifest.xml:20:5-43
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e3f8859426e8163cfbcf14db9cda7dd4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\e3f8859426e8163cfbcf14db9cda7dd4\AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\dd5dce19bfbff4835eb53067af7ddc47\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\dd5dce19bfbff4835eb53067af7ddc47\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\74a7d71b64df22438b78f06252fc1fdd\AndroidManifest.xml:5:5-7:41
@@ -415,6 +429,8 @@ MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\Taha\.gradle
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\96667182f2763bb0f9f7aa23161aab1e\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\d022ef1a046a83a2839fca022ee7e7a7\AndroidManifest.xml:22:5-79
@@ -465,16 +481,6 @@ ADDED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-mast
 		ADDED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-55
 	android:name
 		ADDED from [:react-native-image-picker] F:\React Native Practice\RNFirebase-master\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
-provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
-	android:grantUriPermissions
-		ADDED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
-	android:authorities
-		ADDED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
-	android:exported
-		ADDED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
-	android:name
-		ADDED from [:react-native-webview] F:\React Native Practice\RNFirebase-master\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\96667182f2763bb0f9f7aa23161aab1e\AndroidManifest.xml:30:13-32:85
 	android:value
@@ -509,6 +515,18 @@ ADDED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\c
 		ADDED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:33:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\11c7686015047ee120a6d2c57171426c\AndroidManifest.xml:32:17-107
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\713b22663883c24b7fc96b7803a28b29\AndroidManifest.xml:34:13-50
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0cd98ba4c1afaaf659e92879657f6647\AndroidManifest.xml:30:13-32:85
 	android:value
@@ -547,6 +565,14 @@ ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gra
 		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1f524bbdda07aa6115bea68716b6578d\AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\1f524bbdda07aa6115bea68716b6578d\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\3e5eea4cc03c7c3add03aeeb77337914\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\3e5eea4cc03c7c3add03aeeb77337914\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:10:13-66
+	android:name
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\70e6f7ae395561197921e2c8b5695792\AndroidManifest.xml:9:13-58
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\0c7b40a10d06e59f2643365719918a13\AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\f7cc7016cf763ebd90f1391cd0a6f18f\AndroidManifest.xml:26:5-110
@@ -607,9 +633,3 @@ ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\Taha\.gradle\ca
 		ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\a11f650b460e452ececd6bcf1fda7691\AndroidManifest.xml:16:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\a11f650b460e452ececd6bcf1fda7691\AndroidManifest.xml:13:13-77
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\3e5eea4cc03c7c3add03aeeb77337914\AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\3e5eea4cc03c7c3add03aeeb77337914\AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taha\.gradle\caches\transforms-2\files-2.1\3e5eea4cc03c7c3add03aeeb77337914\AndroidManifest.xml:24:13-58

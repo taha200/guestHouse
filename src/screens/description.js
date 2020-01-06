@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Button,Text,Icon,Divider,Rating, Card} from 'react-native-elements';
+import {Button,Text,Icon,Divider,Rating, Card,Header} from 'react-native-elements';
 import {SliderBox} from 'react-native-image-slider-box';
 ;
 import {
@@ -15,10 +15,10 @@ class Description extends Component{
   state={
     addToFav:false,
     images:[
-      'https://images.pexels.com/photos/999515/pexels-photo-999515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-      'https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-      'https://images.pexels.com/photos/532168/pexels-photo-532168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-    ]
+      'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg',
+       'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg',
+        'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg'
+      ]
   }
 
   handleColor = () =>{
@@ -27,6 +27,14 @@ class Description extends Component{
     render(){
         return (
           <View style={styles.Container}>
+                     <Header 
+  leftContainerStyle={{marginBottom:15,marginRight:10}}
+  leftComponent={<Icon type="material" name="arrow-back" size={35} color="white"  />}
+  containerStyle={{backgroundColor:'#F246AD',
+  height: Platform.OS === 'ios' ? 70 :  70 - 10}}
+  >
+
+  </Header>
               <SliderBox 
                 height={170}
                 autoplay
@@ -36,17 +44,14 @@ class Description extends Component{
               />
               <ScrollView showsVerticalScrollIndicator={false}>
                   <View style={{display:"flex",flexDirection:'row',justifyContent:'space-between',alignItems:'center',margin:10}}>
-                      <Text h4 style={{color:'gray'}}>VIVO Mobile</Text>
-                          <TouchableOpacity style={{display:"flex",flexDirection:'row',justifyContent:'space-between',alignItems:'center'}} onPress={this.handleColor}>
-                              <Text style={{color:'gray',marginRight:5}}>Add To Fav</Text>
-                              <Icon type="material" name="favorite"  iconStyle={{color:this.state.addToFav===false ? 'lightgray' : 'red'}} />
-                          </TouchableOpacity>
+                      <Text h4 style={{color:'gray'}}>Hotel Name</Text>
+                        
                   </View> 
 
                   <Divider />
 
                   <View style={{display:"flex",flexDirection:'row',justifyContent:'space-between',alignItems:'center',margin:10}}>
-                      <Text style={{color:'gray',fontSize:20}}>34,000 PKR</Text>
+                      <Text style={{color:'gray',fontSize:20}}>10000 PKR for 24 hrs</Text>
                       <Rating imageSize={20} />
                   </View>
 
@@ -56,13 +61,13 @@ class Description extends Component{
                     showsHorizontalScrollIndicator={false}
                     horizontal
                     data={[{
-                     image:'https://images.pexels.com/photos/999515/pexels-photo-999515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                     image:'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg'
                     },
                     {
-                      image:'https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                      image:'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg'
                     },
                     {
-                      image:'https://images.pexels.com/photos/532168/pexels-photo-532168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                      image:'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg'
                     }
                      
                     ]}
@@ -80,19 +85,17 @@ class Description extends Component{
                   <Divider />
 
                   <Text style={{margin:10}}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                   Address: Flat No.2 Nazimabad Fire Station Karachi
                   </Text>
 
                   <Divider />
 
                   <View style={{margin:10}}>
-                    <Text h4 style={{color:'gray'}}>Seller</Text>
-                    <Text>Name: Syed Mutahir</Text>
-                    <Text>Location: Stee Town Bin-Qasim Karachi</Text>
+                    <Text h4 style={{color:'gray'}}>Rooms</Text>
+                    <Text>No rooms added yet</Text>
                   </View>
 
-                  <Button title="Order Now" buttonStyle={{width:200,backgroundColor:'#0b7253',alignSelf:'center',marginTop:50}} /> 
+                  <Button title="Book Now" buttonStyle={{width:200,backgroundColor:'#F246AD',alignSelf:'center',marginTop:50}} /> 
               </ScrollView>
               
           </View>

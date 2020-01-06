@@ -28,6 +28,7 @@ class Register extends React.Component{
  constructor(props){
    super(props);
    this.state={
+     name:'',
     firebaseUID:'',
     email:'',
     password:'',
@@ -66,6 +67,7 @@ onRegister=()=>{
   
       firebase.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((data)=>{
    this.userCreation({
+     name:this.state.name,
      email:this.state.email,
      password:this.state.password,
      profilePicUrl:this.state.profilePicUrl,
@@ -91,18 +93,7 @@ onRegister=()=>{
     // ...
   });
 }
-getId=()=>{
-  getData = async () => {
-    try {
-      const value = await AsyncStorage.getItem('@uXeRId')
-      if(value !== null) {
-     console.log(value)
-      }
-    } catch(e) {
-      // error reading value
-    }
-  }
-}
+
 
 ChooseImage = ()=>{
   const options = {
@@ -167,8 +158,8 @@ console.log(error)
       <View style={{width:'90%',borderRadius:10}}>
           
           
-
-      <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+      <TextInput placeholder="Enter Name..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+     <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
       <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
       <TextInput placeholder="Enter Insta Profile Link..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.InstaProLink} onChangeText={(value)=>this.setState({InstaProLink:value})}/>
       <TextInput placeholder="Enter Fb Profile Link ..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.fbProLink} onChangeText={(value)=>this.setState({fbProLink:value})}/>

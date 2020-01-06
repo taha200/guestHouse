@@ -61,13 +61,13 @@ class Portfolio extends Component{
 
                     <FlatList 
                         numColumns={2}
-                        data={this.state.guestHouse}
+                        data={['eref','ddf']}
 
                         renderItem={({item})=>(
                       
-                        <Card containerStyle={{padding:0,width:width*0.46,marginRight:2,marginLeft:9,borderRadius:10}} image={{uri:'https://images.pexels.com/photos/1937394/pexels-photo-1937394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}}>
+                        <Card containerStyle={{padding:0,width:width*0.46,marginRight:2,marginLeft:9,borderRadius:10}} image={{uri:'https://q-xx.bstatic.com/images/hotel/max500/130/130684189.jpg'}}>
             
-                            <Text h4 style={{color:'gray',alignSelf:'center',marginTop:10}}>fefe</Text>
+                            <Text h4 style={{color:'gray',alignSelf:'center',marginTop:10}}>Hotel Name</Text>
                             <View style={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',padding:10}}>
                                 <Rating imageSize={20} /> 
                                 <Text>2.5</Text>

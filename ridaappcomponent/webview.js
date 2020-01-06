@@ -20,7 +20,7 @@ const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height
 
 
-class AddItem extends Component{
+class WebViewComp extends Component{
 
     state={
       isOpenModal:false,
@@ -105,4 +105,4 @@ class AddItem extends Component{
 
 
 
-export default AddItem;
+export default WebViewComp;

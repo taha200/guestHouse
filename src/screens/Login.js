@@ -59,7 +59,6 @@ class Login extends React.Component{
                 <TextInput placeholder="Enter Password..."  secureTextEntry={true} style={{borderBottomWidth:1,marginBottom:15,height:50}} onChangeText={(val)=>this.setState({password:val})}  />
                 
                 <Text style={{marginLeft:"3%"}}>Create Account <Text style={{color:'blue'}} >Sign Up</Text></Text>
-                <Text style={{color:'blue',marginTop:10,marginLeft:"3%"}}>Forgot Password</Text>
                 
                 <Button title="Sign In" onPress={this.onLogin}  buttonStyle={{backgroundColor:"#F246AD",width:100,alignSelf:'flex-end',marginTop:15}} />
                 
