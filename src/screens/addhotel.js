@@ -197,7 +197,7 @@ AddHotel=()=>{
       totalBookingNumber: 0
   }
   
-  fetch("http://192.168.0.106:8000/addHotel",
+  fetch("",
     {
       method: "POST",
       headers: {
@@ -206,7 +206,7 @@ AddHotel=()=>{
       body: JSON.stringify(data)
         }).then(res => res.json()).then(datam => {
           alert('hotel Added')
-        }).catch(err => {alert('You are not registered Check Internet Connection')})
+        }).catch(err => console.log(err))
 
     // localStorage.setItem('URL',url)
 

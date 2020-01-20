@@ -26,7 +26,7 @@ class Portfolio extends Component{
     AsyncStorage.getItem('uid').then(value=>this.setState({val:value}))
   }
   fetchHotelonFbUID=()=>{
-    fetch("http://192.168.0.101:8000/hotelListBySpecificID"+this.state.val,
+    fetch(""+this.state.val,
     {
       method: "GET"
         }).then(res => res.json()).then(data=> {

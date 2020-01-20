@@ -197,7 +197,7 @@ AddHotel=()=>{
       totalBookingNumber: 0
   }
   
-  fetch("http://192.168.0.106:8000/addHotel",
+  fetch("",
     {
       method: "POST",
       headers: {

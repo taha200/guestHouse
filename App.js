@@ -7,109 +7,220 @@ import {
   View,
   StatusBar,
   Image,
-  AsyncStorage,
-  TextInput,FlatList
+  TextInput,
+  AsyncStorage
 } from 'react-native';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-
-import {Button,Text,Header,Icon,Input} from 'react-native-elements';
 import {
- 
+  Header,
   LearnMoreLinks,
   Colors,
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import firebase from 'react-native-firebase'
+import {Button,Text,ButtonGroup} from 'react-native-elements';
+import ImagePicker from 'react-native-image-picker';
 
 
-class Login extends React.Component{
+
+
+class Register extends React.Component{
  constructor(props){
    super(props);
    this.state={
     firebaseUID:'',
+    name:'',
      email:'',
      password:'',
+     profilePicUrl:'',
+     cnic:'',
+     phoneNo:'',
+     createdDate:Date.now(),
+      userType:false,
+       avatarSource:'',
+       selectedIndex:0,
+       showImage:false
+   }
+   this.updateIndex = this.updateIndex.bind(this)
+    
+  }
+  updateIndex (selectedIndex) {
+    this.setState({
+      selectedIndex:selectedIndex
+    })
+   if(selectedIndex===1){
+     this.setState({
+       userType:true
+     })
     }
- }
-componentDidMount(){
-  const fireRef=firebase.database().ref()
-  //  fireRef.on('value',(snapshot)=>{
-  //     console.log(snapshot.val())
-  //  })
-  console.log(fireRef)
-
-}
-
- 
-  onLogin=()=>{
-    firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((data)=>{
-        AsyncStorage.setItem('uid',data.user.uid)
+     else{
+      this.setState({
+        userType:false
+      })
+     }
    
-}).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  alert(errorMessage)
-  // ...
-});
+    this.setState({userType:selectedIndex})
+  }
+userCreation=(data)=>{
+  console.log(data)
+    fetch("",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+        }).then(res => res.json()).then(data => {
+          alert('User Created Now Login With Credentials')
+        }).catch(err => {alert('You are not registered Check Internet Connection')})
 }
+
+onRegister=()=>{
+  
+      firebase.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((data)=>{
+   this.userCreation({
+    firebaseUID:data.user._user.uid,
+     email:this.state.email,
+     password:this.state.password,
+     profilePicUrl:this.state.profilePicUrl,
+     cnic:this.state.cnic,
+     createdDate:Date.now(),
+     userType:this.state.userType,
+     name:this.state.name
+   })
+   this.setState({
+     name:'',
+    email:'',
+    password:'',
+    cnic:'',
+    profilePicUrl:'',
+    avatarSource:'',
+    showImage:false
+  })
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+   alert(errorMessage)
+    // ...
+  });
+}
+
+
+ChooseImage = ()=>{
+  const options = {
+    quality: 1.0,
+    maxWidth: 800,
+    maxHeight: 500,
+    storageOptions: {
+      skipBackup: true,
+    },
+  };
+  ImagePicker.showImagePicker(options,(response) => {
+ 
+      var storageRef = firebase.storage().ref();
+
+    // setTimeout(this.getItemLocally,5000)
+    // Create a reference to 'images/mountains.jpg'
+
+
+     
+       
+  
+  
+    if (response.didCancel) {
+      console.log('User cancelled image picker');
+    } else if (response.error) {
+      console.log('ImagePicker Error: ', response.error);
+    } else if (response.customButton) {
+      console.log('User tapped custom button: ', response.customButton);
+    } else {
+       this.setState({
+         showImage:true,
+         avatarSource:response.uri
+       })
+      var file=response.path.toString()
+      var reftosave = storageRef.child('Users Profile Images/'+this.state.email+'.jpg');
+      reftosave.putFile(file).then((snapshot)=> {
+         this.setState({
+           profilePicUrl:snapshot.downloadURL
+         })
+    alert('Your Info Is Going To Submit Keep Patience')
+         }).catch(function(error) {
+console.log(error)
+        });
+  
+  
+      // You can also display the image using data:
+      // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+  
+    }
+  
+}
+  )}
 
   render(){
-    return(
+   
+     var buttons=['Customer', 'Land Lord']
+    return (
       <View style={styles.Container}>
-             <Header 
-  leftContainerStyle={{marginBottom:15,marginRight:10}}
-  centerComponent={<Text  style={{color:'white',marginBottom:20,fontSize:20}}>List For Quick Contact</Text>}
-  containerStyle={{backgroundColor:'#65779F',
-  height: Platform.OS === 'ios' ? 70 :  70 - 10}}
-  ></Header>
-   <Input 
-inputContainerStyle={{borderWidth:2,borderColor:'lightgray',height:50,marginTop:10,backgroundColor:'lightgray',borderRadius:25}}
-placeholder='Search'
-  leftIcon={
-    <Icon  containerStyle={{marginRight:10}}
-    name="ios-search"
-    type="ionicon"
-    color="black"
-    size={25}
+        <Text h3 style={{color:'#F246AD',marginBottom:25}}>Stay N GO</Text>
+
+        <Text h4 style={{color:'gray',alignSelf:'flex-start',marginBottom:15,marginLeft:"7%"}}>SignUp As</Text>
+        <ButtonGroup
+        selectedButtonStyle={{backgroundColor:'#F246AD'}}
+      onPress={this.updateIndex}
+      selectedIndex={this.state.selectedIndex}
+      buttons={buttons}
+      containerStyle={{height: 50}}
     />
-  }
+    {(this.state.selectedIndex === 0)?
+      <View style={{width:'90%',borderRadius:10}}>
+          
+          
+          <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
 
-/>
-<FlatList 
-                  data={['efwew','ewfw','ewfewfwe','efwew','ewfw','ewfewfwe','efwew','ewfw','ewfewfwe','efwew','ewfw','ewfewfwe','efwew','ewfw','ewfewfwe']}
-                
-                  renderItem={({ title })=> {
-  return (
-    <View style={{alignItems:'center',marginTop:5,borderRadius:12}}>
-    <View style={{width:wp('98%'),height:hp('15%'),backgroundColor:'#65779F',flexDirection:'row'}}>
-<Image
-source={{
-uri:
-  'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-}}
-style={{width:wp('17%'),height:hp('10%'),alignSelf:'center',marginLeft:5,borderRadius:100}}
-/>
-<Text style={{fontSize:18,alignSelf:'center',marginLeft:5,color:'white'}}>Fast Heal Dr.Yash</Text>
-<View style={{alignSelf:'center',marginLeft:5}}>
-<Button title='View All Contact Info' buttonStyle={{backgroundColor:'blue'}} />
-</View>
-      </View>
-      </View>
-  );
-}
+      <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+      <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
+      <Text h6>TextInput CNIC (if Pakistani) else Passport No.</Text>
+      <TextInput placeholder="CNIC/Passport No...." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.cnic}  onChangeText={(value)=>this.setState({cnic:value})} />
 
-                  }
-                  />
-            </View>
-    )
-  }
+      <Button title="Choose Profile Picture" onPress={this.ChooseImage} buttonStyle={{backgroundColor:"#F246AD",width:'50%',alignSelf:'flex-start',marginTop:15}} />
+      {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:60,height:60,marginTop:5,borderRadius:8}}/>
 }
+      <Text style={{marginLeft:"3%"}}>Have Account <Text style={{color:'blue'}} onPress={()=>this.props.navigation.navigate('SignIn')}>Sign In</Text></Text>
+      <Button title="Sign Up" onPress={this.onRegister}  buttonStyle={{backgroundColor:"#F246AD",width:100,alignSelf:'flex-end',marginTop:15}} />
+
+    </View>:
+     <View style={{width:'90%',borderRadius:10}}>
+          <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+
+<TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+      <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
+      <Text h6>TextInput CNIC (if Pakistani) else Passport No.</Text>
+      <TextInput placeholder="CNIC/Passport No...." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.cnic}  onChangeText={(value)=>this.setState({cnic:value})} />
+      <Button title="Choose Profile Picture" onPress={this.ChooseImage} buttonStyle={{backgroundColor:"#F246AD",width:'50%',alignSelf:'flex-start',marginTop:15}} />
+ {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:60,height:60,marginTop:5,borderRadius:8}}/>
+}
+      <Text style={{marginLeft:"3%"}}>Have Account <Text style={{color:'blue'}} onPress={()=>this.props.navigation.navigate('SignIn')}>Sign In</Text></Text>
+      <Button title="Sign Up" onPress={this.onRegister}  buttonStyle={{backgroundColor:"#F246AD",width:100,alignSelf:'flex-end',marginTop:15}} />
+
+</View> 
+}
+    
+        
+       
+      </View>
+    );
+}
+};
+
 const styles = StyleSheet.create({
-  Container: {
-    flex:1,
-  },
+Container: {
+flex:1,
+justifyContent:'center',
+alignItems:'center'
+},
 });
 
-export default Login;
+export default Register;

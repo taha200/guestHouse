@@ -63,7 +63,7 @@ class Register extends React.Component{
   }
 userCreation=(data)=>{
   console.log(data)
-    fetch("http://192.168.0.106:8000/userCreate",
+    fetch("",
     {
       method: "POST",
       headers: {

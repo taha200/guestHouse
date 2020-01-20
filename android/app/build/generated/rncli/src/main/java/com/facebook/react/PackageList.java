@@ -17,6 +17,8 @@ import com.fypmblapp.R;
 import com.reactnativecommunity.geolocation.GeolocationPackage;
 // react-native-firebase
 import io.invertase.firebase.RNFirebasePackage;
+// react-native-gesture-handler
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-image-picker
 import com.imagepicker.ImagePickerPackage;
 // react-native-maps
@@ -58,6 +60,7 @@ public class PackageList {
       new MainReactPackage(),
       new GeolocationPackage(),
       new RNFirebasePackage(),
+      new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
       new MapsPackage(),
       new VectorIconsPackage()
