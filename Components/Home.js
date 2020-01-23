@@ -11,15 +11,14 @@ import {
 } from 'react-native';
 const width = Dimensions.get('window').width;
 
-import mobile1 from './images/mobile1.jpg';
 
 class Home extends Component{
 
     state={
       cardData:[
-        {name:'VIVO Mobile',image:mobile1,addToFav:false,Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"},
-        {name:'VIVO Mobile',image:mobile1,addToFav:false,Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"},
-        {name:'VIVO Mobile',image:mobile1,addToFav:false,Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}        
+        {name:'VIVO Mobile',addToFav:false,Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"},
+        {name:'VIVO Mobile',addToFav:false,Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"},
+        {name:'VIVO Mobile',addToFav:false,Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}        
       ]
     }
     render(){

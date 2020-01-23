@@ -29,7 +29,9 @@ class Description extends Component{
           <View style={styles.Container}>
                      <Header 
   leftContainerStyle={{marginBottom:15,marginRight:10}}
-  leftComponent={<Icon type="material" name="arrow-back" size={35} color="white"  />}
+  leftComponent={<Icon type="material" name="arrow-back" size={35} color="white" onPress={()=>this.props.navigation.navigate('Portfolio')} />}
+  rightComponent={<Text h5 style={{color:'white',marginBottom:20}} onPress={()=>this.props.navigation.navigate('AddRooms')}>Add Rooms</Text>}
+
   containerStyle={{backgroundColor:'#F246AD',
   height: Platform.OS === 'ios' ? 70 :  70 - 10}}
   >
@@ -50,10 +52,7 @@ class Description extends Component{
 
                   <Divider />
 
-                  <View style={{display:"flex",flexDirection:'row',justifyContent:'space-between',alignItems:'center',margin:10}}>
-                      <Text style={{color:'gray',fontSize:20}}>10000 PKR for 24 hrs</Text>
-                      <Rating imageSize={20} />
-                  </View>
+               
 
                   <Divider />
 

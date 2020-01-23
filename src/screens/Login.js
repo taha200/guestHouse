@@ -30,7 +30,26 @@ class Login extends React.Component{
      password:'',
     }
  }
-
+ FindUser=(id)=>{
+   const data={
+     firebaseUID:id
+   }
+  fetch("http://192.168.0.105:8000/singleUser",
+  {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+      }).then(res => res.json()).then(datam => {
+       if(datam.userType){
+         this.props.navigation.navigate('Portfolio')
+       }
+       else{
+         this.props.navigation.navigate('Home')
+       }
+      }).catch(err => {alert('You are not registered Check Internet Connection')})
+ }
 
   getData =  () => {
   AsyncStorage.getItem('uid').then((val)=>console.log(val))
@@ -38,6 +57,8 @@ class Login extends React.Component{
   onLogin=()=>{
     firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((data)=>{
         AsyncStorage.setItem('uid',data.user.uid)
+        this.FindUser(data.user.uid)
+      
    
 }).catch(function(error) {
   // Handle Errors here.

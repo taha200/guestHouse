@@ -197,7 +197,7 @@ AddHotel=()=>{
       totalBookingNumber: 0
   }
   
-  fetch("",
+  fetch("http://192.168.1.166:8000/addHotel",
     {
       method: "POST",
       headers: {
@@ -218,7 +218,7 @@ AddHotel=()=>{
             <View style={styles.Container}>
              <Header 
   leftContainerStyle={{marginBottom:15,marginRight:10}}
-  leftComponent={<Icon type="material" name="menu" size={35} color="white"  />}
+  leftComponent={<Icon type="material" name="arrow-back" size={35} color="white" onPress={()=>this.props.navigation.navigate('Portfolio')}  />}
   centerComponent={<Text h4 style={{color:'white',marginBottom:20}}>Add Guest House</Text>}
   containerStyle={{backgroundColor:'#F246AD',
   height: Platform.OS === 'ios' ? 70 :  70 - 10}}

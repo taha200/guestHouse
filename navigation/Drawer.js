@@ -1,40 +1,74 @@
 import React from 'react'
-import {StyleSheet,Platform,Dimensions,View,Text,TouchableOpacity,FlatList} from'react-native'
+import {StyleSheet,Platform,Dimensions,View,Text,TouchableOpacity,FlatList,AsyncStorage} from'react-native'
 
 import {createAppContainer,createStackNavigator,createSwitchNavigator,createDrawerNavigator} from 'react-navigation'
 
 const Width = Dimensions.get('window').width
 const Height = Dimensions.get('window').height
 
-import MyProfile from '../ridaappcomponent/profile'
-import Login from '../ridaappcomponent/login'
-import Register from '../ridaappcomponent/register'
-import WebViewComp from '../ridaappcomponent/webview'
-import splashScreen from '../ridaappcomponent/splashscreen'
-import List from '../ridaappcomponent/list'
+import AddHotel from '../src/screens/addhotel'
+import AddRoom from '../src/screens/addRooms'
+import BookingForm from '../src/screens/bookingForm'
+import Description from '../src/screens/description'
+import Home from '../src/screens/homeScreen'
+import Login from '../src/screens/Login'
+import Portfolio from '../src/screens/portfolio'
+import Register from '../src/screens/Register'
+import MenuDrawer from '../src/screens/MenuDrawerComp'
 
 const homeStack =createStackNavigator({
-    Login:{
-        screen:Login,
+    Home:{
+        screen:Home,
       },
-    Register:{
-      screen:Register,
+     Description:{
+      screen:Description,
     },
-    splashScreen:{
-      screen:splashScreen
+    BookingForm:{
+      screen:BookingForm
     },
-    List:{
-        screen:List
-      },
-      WebViewComp:{
-        screen:WebViewComp
-      },
-      MyProfile:{
-        screen:MyProfile
-      }
 
-},{initialRouteName:'spalashScreen',headerMode:'none'})
-export default createAppContainer(homeStack)
+},{initialRouteName:'Home',headerMode:'none'})
+const AddPortfolio=createStackNavigator({
+  Portfolio:{
+    screen:Portfolio
+  },
+  DescriptionHotel:{
+    screen:Description
+  },
+  AddHotel:{
+    screen:AddHotel
+  },
+  AddRooms:{
+    screen:AddRoom
+  }
+},{initialRouteName:'Portfolio',headerMode:'none'})
+const drawerConfig={
+  drawerWidth:Width*0.73,
+  drawerHeight:'50%',
+  drawerPosition:'left',
+  contentComponent:({navigation})=>{
+      return <MenuDrawer navigation={navigation} /> 
+  }
+}
+
+const drawerNavigator = createDrawerNavigator({
+  Home:homeStack,
+  Portfolio:AddPortfolio,
+},drawerConfig)
+ const LoginStack=createStackNavigator({
+   Register:{
+     screen:Register
+   },
+   Login:{
+     screen:Login
+   }
+ },{initialRouteName:'Login',headerMode:'none'})
+ const rootSwitch = createSwitchNavigator({
+  Login:LoginStack,
+  DrawerNavigator:drawerNavigator,
+  
+})
+export default createAppContainer(rootSwitch)
 
 // import React from 'react'
 // import {createAppContainer,createStackNavigator,createSwitchNavigator,createDrawerNavigator} from 'react-navigation'

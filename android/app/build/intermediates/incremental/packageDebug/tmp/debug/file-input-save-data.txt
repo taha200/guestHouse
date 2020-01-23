@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jan 19 23:02:34 PKT 2020
+#Fri Jan 24 01:22:27 PKT 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=F\:\\React Native Practice\\RNFirebase-master\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0

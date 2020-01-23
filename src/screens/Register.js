@@ -7,7 +7,8 @@ import {
   View,
   StatusBar,
   Image,
-  TextInput
+  TextInput,
+  AsyncStorage
 } from 'react-native';
 import {
   Header,
@@ -17,7 +18,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import firebase from 'react-native-firebase'
-import AsyncStorage from '@react-native-community/async-storage';
 import {Button,Text,ButtonGroup} from 'react-native-elements';
 import ImagePicker from 'react-native-image-picker';
 
@@ -36,7 +36,7 @@ class Register extends React.Component{
      cnic:'',
      phoneNo:'',
      createdDate:Date.now(),
-     userType:false,
+      userType:false,
        avatarSource:'',
        selectedIndex:0,
        showImage:false
@@ -63,7 +63,7 @@ class Register extends React.Component{
   }
 userCreation=(data)=>{
   console.log(data)
-    fetch("",
+    fetch("http://192.168.0.105:8000/userCreate",
     {
       method: "POST",
       headers: {
@@ -72,11 +72,11 @@ userCreation=(data)=>{
       body: JSON.stringify(data)
         }).then(res => res.json()).then(data => {
           alert('User Created Now Login With Credentials')
+          this.props.navigation.navigate('Login')
         }).catch(err => {alert('You are not registered Check Internet Connection')})
 }
 
 onRegister=()=>{
-  
       firebase.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((data)=>{
    this.userCreation({
     firebaseUID:data.user._user.uid,
@@ -105,18 +105,7 @@ onRegister=()=>{
     // ...
   });
 }
-getId=()=>{
-  getData = async () => {
-    try {
-      const value = await AsyncStorage.getItem('@uXeRId')
-      if(value !== null) {
-     console.log(value)
-      }
-    } catch(e) {
-      // error reading value
-    }
-  }
-}
+
 
 ChooseImage = ()=>{
   const options = {
@@ -151,16 +140,15 @@ ChooseImage = ()=>{
          avatarSource:response.uri
        })
       var file=response.path.toString()
-//       var reftosave = storageRef.child('Users Profile Images/'+this.state.email+'.jpg');
-//       reftosave.putFile(file).then((snapshot)=> {
-//          this.setState({
-//            profilePicUrl:snapshot.downloadURL
-//          })
-//     alert('Your Info Is Going To Submit Keep Patience')
-//               // localStorage.setItem('URL',url)
-//          }).catch(function(error) {
-// console.log(error)
-//         });
+      var reftosave = storageRef.child('Users Profile Images/'+this.state.email+'.jpg');
+      reftosave.putFile(file).then((snapshot)=> {
+         this.setState({
+           profilePicUrl:snapshot.downloadURL
+         })
+    alert('Your Info Is Going To Submit Keep Patience')
+         }).catch(function(error) {
+console.log(error)
+        });
   
   
       // You can also display the image using data:
@@ -190,7 +178,7 @@ ChooseImage = ()=>{
       <View style={{width:'90%',borderRadius:10}}>
           
           
-          <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+        <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.name} onChangeText={(value)=>this.setState({name:value})}/>
 
       <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
       <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
@@ -205,7 +193,7 @@ ChooseImage = ()=>{
 
     </View>:
      <View style={{width:'90%',borderRadius:10}}>
-          <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
+        <TextInput placeholder="Name" style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.name} onChangeText={(value)=>this.setState({name:value})}/>
 
 <TextInput placeholder="Enter Email..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.email} onChangeText={(value)=>this.setState({email:value})}/>
       <TextInput placeholder="Enter Password..." style={{borderBottomWidth:1,marginBottom:15,height:50}} value={this.state.password} onChangeText={(value)=>this.setState({password:value})}/>
@@ -214,7 +202,7 @@ ChooseImage = ()=>{
       <Button title="Choose Profile Picture" onPress={this.ChooseImage} buttonStyle={{backgroundColor:"#F246AD",width:'50%',alignSelf:'flex-start',marginTop:15}} />
  {this.state.showImage &&<Image source={{uri:this.state.avatarSource}} style={{width:60,height:60,marginTop:5,borderRadius:8}}/>
 }
-      <Text style={{marginLeft:"3%"}}>Have Account <Text style={{color:'blue'}} onPress={()=>this.props.navigation.navigate('SignIn')}>Sign In</Text></Text>
+      <Text style={{marginLeft:"3%"}}>Have Account <Text style={{color:'blue'}} onPress={()=>this.props.navigation.navigate('Login')}>Sign In</Text></Text>
       <Button title="Sign Up" onPress={this.onRegister}  buttonStyle={{backgroundColor:"#F246AD",width:100,alignSelf:'flex-end',marginTop:15}} />
 
 </View> 
